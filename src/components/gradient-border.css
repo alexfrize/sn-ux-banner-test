@@ -1,0 +1,53 @@
+.gradient-border {
+  display: flow-root;
+  position: relative;
+  padding: 4px;
+}
+
+@media (min-width: 768px) {
+  .gradient-border {
+    padding: 16px;
+  }
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  border: 2px solid transparent;
+
+  background: linear-gradient(
+      90deg,
+      rgba(149, 149, 149, 0.5) 0%,
+      rgba(11, 11, 11, 0.9) 11%,
+      rgba(171, 171, 171, 0.7) 24%,
+      rgba(237, 237, 237, 0.7) 50%,
+      rgba(142, 142, 142, 0.7) 78%,
+      rgba(10, 10, 10, 0.8) 90%,
+      rgba(149, 149, 149, 0.9) 100%
+    ),
+    radial-gradient(
+      ellipse at center,
+      #959595 0%,
+      #0d0d0d 10%,
+      #bababa 20%,
+      #0d0d0d 27%,
+      #d3d3d3 78%,
+      #0a0a0a 93%,
+      #dddddd 100%
+    );
+
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+@media (min-width: 768px) {
+  .gradient-border::before {
+    border: 6px solid transparent;
+  }
+}

@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+}
+
+.description {
+  font-weight: 500;
+}
+
+.rounded-accent-font {
+  font-weight: 800;
+}
