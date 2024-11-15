@@ -3,11 +3,11 @@ export function PhotoImage({ imageData }: { imageData: ImageData }) {
   return (
     <div className="absolute inset-0 w-full">
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-top-to-bottom-mobile z-10" />
+        <div className="absolute inset-0 bg-gradient-top-to-bottom z-10" />
         <img
           src={imageData.image}
           alt="rico"
-          className="w-full object-contain lg:object-cover"
+          className="w-full object-contain lg:object-cover max-h-[90vh]"
         />
         {imageData.foregroundCutout && (
           <img
