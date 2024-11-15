@@ -1,4 +1,5 @@
-export function SliderItem({
+import "./styles/gradient-border.css";
+export function ThumbnailItem({
   src,
   isActive,
   onClick,
@@ -12,8 +13,8 @@ export function SliderItem({
       <div
         className={
           isActive
-            ? "p-1 w-full md:w-[160px] lg:w-full lg:max-w-[200px] xl:w-[280px] h-auto relative gradient-border"
-            : "p-1 w-full md:w-[160px] lg:w-full lg:max-w-[140px] xl:w-[160px] h-auto opacity-70"
+            ? "p-2 w-full md:w-[160px] lg:w-full lg:max-w-[200px] xl:w-[280px] h-auto relative gradient-border"
+            : "p-2 w-full md:w-[160px] lg:w-full lg:max-w-[140px] xl:w-[160px] h-auto opacity-70"
         }
         style={{
           cursor: isActive ? "default" : "pointer",
