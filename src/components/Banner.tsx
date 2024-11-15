@@ -5,7 +5,7 @@ import { PhotoImage } from "./PhotoImage";
 import { sliderImages } from "../constants/slider-data";
 import "./styles/bg-gradient.css";
 
-export function Banner({}: {}) {
+export function Banner() {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <section className="flex flex-col mt-[20vh] p-8 lg:mt-[18vh] lg:p-24 relative bg-black">
